@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 #wrapper {
@@ -29,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .logo-container {
@@ -54,4 +54,88 @@ a {
 .nav-items a:hover {
   /* transition: 0.1s; */
   font-weight: bold;
+}
+
+/* Hero Section Start */
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+}
+
+.faded-text {
+  user-select: none;
+  font-size: 7em;
+  color: rgb(231, 231, 231);
+
+  bottom: -16%;
+  left: -5%;
+  font-weight: bold;
+  transition: all 3s;
+}
+
+.hero-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-section-heading {
+  font-size: 35px;
+  color: #343d68;
+  font-weight: 500;
+}
+
+.role {
+  font-weight: 800;
+  color: #4e45d5;
+}
+
+.hero-section-sub-heading {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hero-section-description {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+
+.btn-pink {
+  height: 3rem;
+  width: 8rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 1em;
+  background-color: rgb(228, 89, 89);
+  color: white;
+  box-shadow: 3px 3px 10px 0px #1f1f1f;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.btn-pink::before {
+  content: "";
+  background-color: rgb(53, 179, 34);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+  z-index: -1;
+}
+.btn-pink:hover::before {
+  transform: scaleX(1);
+  z-index: -1;
 }
