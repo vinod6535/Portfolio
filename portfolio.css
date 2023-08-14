@@ -428,3 +428,79 @@ a {
 /*  */
 
 /* Project Section End */
+
+/* Skills Section Start */
+
+.skill-container{
+  position: relative;
+  display: flex;
+  padding: 5rem;
+  margin: 10rem auto;
+  gap: 30px;
+}
+
+.skill-container-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-container-right{
+  width: 50%;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  position: relative;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-faded-text{
+  position: absolute;
+  font-size: 12em;
+  font-weight: bold;
+  color: rgb(231, 231, 231);
+  user-select: none;
+  bottom: -34.5%;
+  right: -15%;
+}
+
+.blob-style{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  animation: blobAnimation 3s linear infinite;
+}
+
+@keyframes blobAnimation {
+  50%{
+    top: 54%;
+    left: 46%;
+  }
+}
+
+.skill-logo{
+  width: 65px;
+  transition: all 0.2s;  
+}
+
+.skill-logo:hover{
+  transform: scale(1.2);
+}
+
+.skill-heading{
+  font-size: 50px;
+  font-style: bold;
+  color: var(--bgOrange);
+  line-height: 50px;
+}
+
+.caps{
+  font-size: 90px;
+}
+
+.skills-sub-heading p{
+  margin-top: 15px;
+}
